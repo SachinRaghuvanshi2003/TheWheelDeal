@@ -1,0 +1,97 @@
+<html>
+<head>
+
+    <title>The Wheel Deal: Login</title>
+    <style>
+
+    body{
+    background-image: url('https://media0.giphy.com/media/cL5vHfneGneZW3sDV1/giphy.gif?cid=6c09b9528dtt6r84qmdec5rj9wc6k6smos9inluqlff7cvat&rid=giphy.gif&ct=s');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin: 0;
+    background-color:white;
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        padding: 80px;
+        background: orange;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+label{
+    color: white;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: orangered;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+#a1{float:right;
+    background-color:transparent;
+    color:orangered
+}
+#a2{float:left;
+    background-color:transparent;
+    color:orangered
+}
+    </style>
+</head>
+<body>
+    <h2>The Wheel Deal</h2><br>
+    <div class="login">
+    <form id="login" action="" method="POST">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <button name="log"  id="log">Login</button>
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+        <a id="a1" href="#">Forgot Password</a>
+        <a  id="a2" href="/signup">Sign Up</a>
+    </form>
+</div>
+</body>
+</html>

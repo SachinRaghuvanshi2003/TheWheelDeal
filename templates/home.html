@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>The Wheel Deal</title>
+        <link rel="icon" href="/static/icons8-retro-car-48.png">
+        <script src="https://kit.fontawesome.com/ed3124efd0.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+        <style>
+            body{margin:0;}
+          #obj1{padding:2px;margin-top:0;border:2px none;width:100%;height:2cm}
+          #obj1h3{float:left;margin-left:15%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight:bolder}
+          #obj1a1{float:left;margin-left:10%;color:black;text-decoration: none;margin-top:0.6cm;font-weight:600;}
+          #obj1a2{float:left;margin-left:2%;color:black;text-decoration: none;margin-top:0.6cm;font-weight:600;}
+          #obj1a3{float:left;margin-left:2%;color:black;text-decoration: none;margin-top:0.6cm;font-weight:600;}
+          #obj1a4{float:left;margin-left:2%;color:black;text-decoration: none;margin-top:0.6cm;font-weight:600;}
+         #obj1a5{float:left;margin-left:10%;margin-top:0.5cm}
+         #obj1a6{float:left;margin-left:2%;margin-top:0.5cm}
+         #obj1a7{float:left;margin-left:2%;margin-top:0.5cm}
+         #obj2{padding:2px;margin-top:0;border:2px none;width:100%;height:8cm;background-image:url("https://images.unsplash.com/photo-1572401611152-cf63d874b019?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FyJTIwcm9hZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+        background-repeat: no-repeat;background-position: center;background-size: cover;}
+        txt{color:orange;font-weight:bolder}
+        #obj2h2{font-weight: 700;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:white;margin-top:1cm;margin-left:40%;}
+        #obj2b1{border-radius:12px;width:3.4cm;height:0.7cm;background-color:orange;;border:2px solid orange;font-size:12;float:left;margin-left:42%;margin-top: 1cm;}
+        #obj2b2{border-radius:12px;width:3.4cm;height:0.7cm;background-color:transparent;border:2px solid white;font-size:12;color:white;float:left;margin-left:0.5cm;margin-top:1cm}
+        #obj3{height:2.2cm;width:100%;background-color:orange;}
+        form.nosubmit {
+  border: none;
+  padding:13px 10px;
+}
+
+input.nosubmit {
+    letter-spacing:2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+  width: 260px;
+  border: 1px solid orangered;
+  display: block;
+  background-color: white;
+  border-radius:12px;
+  width:4cm;
+  text-align: left;
+float:left;
+height:1.5cm
+}
+#f1{ width:10cm;background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+background-color: white; padding: 9px 4px 9px 40px;
+}
+#f2{margin-left:30px; letter-spacing:2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+  width: 260px;
+  border: 1px solid orangered;
+  display: block;
+  background-color: white;
+  border-radius:12px;
+  width:4cm;
+  text-align: left;
+float:left;
+height:1.5cm}
+#f3{margin-left:1cm;font-size:20;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border: 1px solid orangered;
+  display: block;
+  background-color:green;
+  width:3cm; color:white;font-weight:700;
+  border-radius:12px;
+  text-align:center;
+float:left;
+height:1.5cm}
+txt1{color:orangered;font-weight: bolder;}
+#obj3h2{text-align:center;color:black; font-weight:800; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+#obj4{height:5cm;width:100%;text-align:center;}
+text3{color:black;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+txt2{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        </style>
+    </head>
+    <body>
+       <div class="container-fluid">
+        <div id="obj1">
+            <h3 id="obj1h3">The Wheel Deal</h1>
+            <a id="obj1a1" href={{url_for('getlogin')}}>Login</a>
+            <a id="obj1a2" href="services.html">Services</a>
+            <a id="obj1a3" href="/team">Team</a>
+            <a id="obj1a4" href="/contact">Contact</a>
+            <a id="obj1a5" href="www.facebook.com"><img src="/static/fb.png" height="25px" width="25px"></a>
+            <a id="obj1a6" href="www.instagram.com"><img src="/static/insta.png" height="25px" width="25px"></a>
+            <a id="obj1a7" href="www.linkedin.com"><img src="/static/linkedin.png" height="25px" width="25px"></a>
+            {%block user%}{%endblock%}
+        </div>
+        <div id="obj2">
+            <h2 id="obj2h2">Plan your journey for a <txt>limitless</txt><br> adventure.</h2>
+            <a href="/contact"><button id="obj2b1">Get in touch</button></a>
+            <a href="/team"><button id="obj2b2">Meet the team</button></a>
+        </div>
+        <h2 id="obj3h2">RENT YOUR CAR NOW<txt1>!</txt1></h2>
+        <!--<div id="obj3">
+            <form class="nosubmit">
+                <input class="nosubmit" type="search" id="f1" placeholder="Pick-up Location">
+        
+                <input class="nosubmit" type="text" class="fas" id="f2" placeholder="&#128198; Pick-up Date"  onfocus="(this.type='date')"   style="font-family:Arial, FontAwesome">
+                <input class="nosubmit" type="text" id="f2" placeholder="&#xf017; Time"  onfocus="(this.type='time')" onblur="(this.type='text')" style="font-family:Arial, FontAwesome">
+                <input class="nosubmit" type="text" id="f2" placeholder="&#128198; Drop-off Date"  onfocus="(this.type='date')" style="font-family:Arial, FontAwesome">
+                <input class="nosubmit" type="text" id="f2" placeholder="&#xf017; Time"  onfocus="(this.type='time')"  onblur="(this.type='text')" style="font-family:Arial, FontAwesome">
+                <button type="submit" class="nosubmit" id="f3">Search</button>
+              </form>
+         </div>-->
+        {%block content%}{%endblock%}
+        <div id="obj4">
+            <div id="obj4i1" style="float:left;margin-left: 20px;border:2px none;padding:10px;margin-top:30px">
+           <img height="70px" width="70px"src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_calendar@2x.png">
+           <br>
+            <txt2 style="font-weight:800;font-size:18;">Flexible rentals</txt2><br>
+            <text3>Cancel or change most bookings for free up to<br>48 hours before pick-up</text3>
+            </div>
+            <div id="obj4i1" style="float:left;margin-left:80px;border:2px none;padding:10px;margin-top:30px">
+                <img height="70px" width="70px"src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_magnifier@2x.png">
+                <br>
+                 <txt2 style="font-weight:800;font-size:18;">No hidden fees</txt2><br>
+                 <text3>Know exactly what you’re paying</text3>
+            </div>
+            <div id="obj4i1" style="float:left;margin-left:80px;border:2px none;padding:10px;margin-top:30px">
+                    <img height="70px" width="70px"src="https://cdn2.rcstatic.com/com.rentalcars.185492029745.eu-west-1.web.prod.static-live/images/landing-pages/usps/desktop/usp_wallet@2x.png">
+                    <br>
+                     <txt2 style="font-weight:800;font-size:18;">Price match guarantee</txt2><br>
+                     <text3>Found the same deal for less? We’ll match the price.</text3>
+            </div>
+           
+        </div>
+        </div>
+    </body>
+</html>

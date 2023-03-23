@@ -7,9 +7,9 @@ The website's appearence is like:
 <table>
 	<tr align="center" style="font-weight:bold">
 		<td>
-		John Doe
+		Sachin Raghuvanshi
 		<p align="center">
-			<img src = "https://i.ibb.co/4J9LXxS/cclogo.png" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
+			<img src = "https://ibb.co/QnxrnFX" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
 		</p>
 			<p align="center">
 				<a href = "https://github.com/SachinRaghuvanshi2003">
@@ -18,9 +18,9 @@ The website's appearence is like:
 			</p>
 		</td>
 				<td>
-		John Doe
+		Ayush Gautam
 		<p align="center">
-			<img src = "https://i.ibb.co/4J9LXxS/cclogo.png" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
+			<img src = "https://ibb.co/54YxtDt" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
 		</p>
 			<p align="center">
 				<a href = "https://github.com/ayushgautam2003">
